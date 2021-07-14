@@ -25,8 +25,9 @@ module.exports = {
     },
     filename: "index.js",
     globalObject: "this",
-    library: "index",
-    libraryTarget: "commonjs2",
+    library: {
+      type: "module",
+    },
     module: true,
     path: path.resolve(__dirname, "./dist"),
   },
