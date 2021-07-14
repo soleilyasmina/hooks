@@ -2,6 +2,9 @@ const path = require("path");
 
 module.exports = {
   entry: "./src/index.js",
+  experiments: {
+    outputModule: true,
+  },
   externals: {
     react: "commonjs react",
     "react-dom": "commonjs react-dom",
