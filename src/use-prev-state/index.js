@@ -6,7 +6,7 @@ import { useState } from "react";
  * @param {*} initialPrevValue Value to initalize prevState with.
  * @returns {Array} Current state getter, previous state getter, and current state setter.
  */
-export const usePrevState = (initialValue, initialPrevValue = null) => {
+const usePrevState = (initialValue, initialPrevValue = null) => {
   const [currState, _setCurrState] = useState(initialValue);
   const [prevState, setPrevState] = useState(initialPrevValue);
 
@@ -17,3 +17,6 @@ export const usePrevState = (initialValue, initialPrevValue = null) => {
 
   return [currState, prevState, setCurrState];
 }
+
+
+export default usePrevState;

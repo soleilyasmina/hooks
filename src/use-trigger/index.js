@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
  * @param {function} cleanup Function to be called as cleanup.
  * @returns Function that can cause callback to be called
  */
-export const useTrigger = (effect = () => {}, cleanup = () => {}) => {
+const useTrigger = (effect = () => {}, cleanup = () => {}) => {
   const [toggle, setToggle] = useState(true);
 
   useEffect(() => {
@@ -18,3 +18,5 @@ export const useTrigger = (effect = () => {}, cleanup = () => {}) => {
 
   return trigger;
 };
+
+export default useTrigger;
