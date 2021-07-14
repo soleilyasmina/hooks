@@ -5,6 +5,7 @@
   ],
   "plugins": [
     "transform-react-jsx",
+    "@babel/plugin-proposal-export-default-from",
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-transform-runtime"
   ]
