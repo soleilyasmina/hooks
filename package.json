@@ -1,15 +1,15 @@
 {
   "name": "@soleilyasmina/hooks",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "This package contains hooks that @soleilyasmina uses frequently.",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode development",
     "prepublishOnly": "webpack --mode production"
   },
   "files": [
-    "build"
+    "dist"
   ],
   "repository": {
     "type": "git",

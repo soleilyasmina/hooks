@@ -17,10 +17,14 @@ module.exports = {
     ],
   },
   output: {
+    environment: {
+      destructuring: true,
+    },
     filename: "index.js",
     globalObject: "this",
     library: "index",
     libraryTarget: "commonjs2",
-    path: path.resolve(__dirname, "build"),
+    module: true,
+    path: path.resolve(__dirname, "./dist"),
   },
 };
