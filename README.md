@@ -10,7 +10,6 @@ This package contains hooks that [@soleilyasmina](https://github.com/soleilyasmi
 - [Usage](#usage)
 - [usePrevState](#useprevstate)
 - [useResize](#useresize)
-- [useTrigger](#usetrigger)
 - [Credits](#credits)
 
 ## Installing
@@ -95,37 +94,6 @@ const Menu = () => {
 };
 
 export default Menu;
-```
-
-## useTrigger
-
-To create an effect that is triggered on mount and manually without redeclaring the function, implement `useTrigger`.
-
-```jsx
-import { useState } from "react";
-import { useTrigger } from "@soleilyasmina/hooks";
-
-const Dashboard = () => {
-  const [posts, setPosts] = useState([]);
-  const fetchPosts = useTrigger(() => {
-    fetch("/api/posts")
-      .then((res) => res.json())
-      .then((data) => setPosts(data));
-  });
-
-  return (
-    <section>
-      <ul>
-        {posts.map((post) => (
-          <li>{post}</li>
-        ))}
-      </ul>
-      <button onClick={fetchPosts}>⟳</button>
-    </section>
-  )
-}
-
-export default Dashboard;
 ```
 
 ## Credits
