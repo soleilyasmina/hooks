@@ -1,12 +1,13 @@
 {
   "name": "@soleilyasmina/hooks",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "This package contains hooks that @soleilyasmina uses frequently.",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode development",
-    "prepublishOnly": "webpack --mode production"
+    "prepublishOnly": "alex README.md && webpack --mode production",
+    "lint-language": "alex README.md"
   },
   "files": [
     "dist"
@@ -34,11 +35,15 @@
     "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "alex": "^10.0.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "eslint": "^7.30.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.4",
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.2"
   }
