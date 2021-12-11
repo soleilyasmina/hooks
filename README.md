@@ -62,7 +62,7 @@ export default Counter;
 
 ## useResize
 
-To create an effect that runs depending on the window's current size, implement `useResize`.
+To create an effect that runs depending on the window's current size, implement `useResize`:
 
 ```jsx
 import { useState } from "react";
@@ -98,6 +98,8 @@ export default Menu;
 ```
 
 ## useToggle
+
+To create a state with a setter that toggles a boolean, implement `useToggle`:
 
 ```jsx
 import { useToggle } from "@soleilyasmina/hooks";
