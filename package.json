@@ -1,6 +1,6 @@
 {
   "name": "@soleilyasmina/hooks",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "This package contains hooks that @soleilyasmina uses frequently.",
   "main": "dist/index.js",
   "scripts": {

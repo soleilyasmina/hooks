@@ -5,7 +5,7 @@ import { useState } from "react";
  * @param {*} initialValue Value to initialize state with.
  * @returns {Array} Current state getter, and state toggler.
  */
-const useToggle = (initialValue) => {
+const useToggle = (initialValue = false) => {
   const [currState, setCurrState] = useState(initialValue);
 
   const toggleState = () => setCurrState(!currState);
