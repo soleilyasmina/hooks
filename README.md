@@ -10,6 +10,7 @@ This package contains hooks that [@soleilyasmina](https://github.com/soleilyasmi
 - [Usage](#usage)
 - [usePrevState](#useprevstate)
 - [useResize](#useresize)
+- [useToggle](#usetoggle)
 - [Credits](#credits)
 
 ## Installing
@@ -33,7 +34,7 @@ yarn add @soleilyasmina/hooks
 These hooks can be implement into any React functional component by importing them from the package:
 
 ```js
-import { usePrevState, useResize, useTrigger } from "@soleilyasmina/hooks";
+import { usePrevState, useResize, useToggle } from "@soleilyasmina/hooks";
 ```
 
 ## usePrevState
@@ -94,6 +95,29 @@ const Menu = () => {
 };
 
 export default Menu;
+```
+
+## useToggle
+
+```jsx
+import { useToggle } from "@soleilyasmina/hooks";
+
+function DarkModeButton() {
+  const [darkMode, toggleDarkMode] = useToggle(false);
+
+  const style = {
+    backgroundColor: darkMode ? 'black' : 'white',
+    color: darkMode ? 'white' : 'black',
+  }
+
+  return (
+    <div style={style}>
+      <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
+   </div>
+  );
+}
+
+export default DarkModeButton;
 ```
 
 ## Credits
